@@ -1,0 +1,51 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* root styles */
+:root {
+	--primary-color: #1ddb6c;
+	--secondary-color: #000;
+	--background-color: #0e0e0e;
+	--secondary-background-color: #1a1a1a;
+	--bacground-color-hover: #472831 --secondary-background-color-hover: #1a1a1a;
+	--text-color: #f0f0f0;
+	--hover-color: #15af54;
+	--font-family: 'Nunito', sans-serif;
+}
+
+/* Reset some basic styles for consistency across browsers */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var("--font-family"), sans-serif;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	text-align: center;
+	padding: 2em;
+}
+
+.logo {
+	width: 250px;
+	margin: 2em 0;
+}
+
+#cta-button {
+	background: var(--primary-color);
+	color: var(--text-color);
+	border: none;
+	padding: 1em 2em;
+	font-size: 1.1em;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background 0.3s ease;
+}
+
+#cta-button:hover {
+	background: var(--bacground-color-hover);
+}
